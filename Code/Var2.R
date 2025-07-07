@@ -1,0 +1,5 @@
+norm_dist <- rnorm(1000)
+na_list <- rep(NA, 1000)
+sample_selection <- sample(c(norm_dist, na_list), 100)
+amount_na <- is.na(sample_selection)
+sum(amount_na)
